@@ -1,0 +1,187 @@
+#tarefas .controles,
+#tarefas li,
+#tarefas .filtros {
+  display: flex;
+  align-items: center;
+}
+
+#todo {
+  width: 500px;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 7px;
+  box-shadow: var(--sombra);
+  position: relative;
+}
+
+.tarefa-input {
+  height: 52px;
+  position: relative;
+}
+
+.tarefa-input i {
+  font-size: 24px;
+  top: 50%;
+  position: absolute;
+  transform: translate(17px, -50%);
+  color: var(--especial);
+  opacity: 0.8;
+}
+
+.tarefa-input input {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 0 20px 0 53px;
+  background-color: var(--bg-escuro);
+  color: var(--fonte-escura);
+}
+
+.tarefa-input input::placeholder {
+  color: var(--fonte-escura);
+}
+
+.controles,
+.tarefa-cx li {
+  justify-content: space-between;
+}
+
+.controles {
+  padding: 18px 25px;
+}
+
+.filtros {
+  justify-content: space-between;
+  gap: 15px;
+}
+.filtros span {
+  font-size: 17px;
+  color: var(--fonte-escura);
+  cursor: pointer;
+}
+
+.filtros span.ativo {
+  color: var(--fonte-clara);
+}
+
+.controles .btn-limpar {
+  color: var(--fonte-clara);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 9px;
+  border-radius: 4px;
+  background-color: var(--fonte-escura);
+}
+
+.btn-limpar:hover {
+  color: var(--fonte-escura);
+  background-color: var(--fonte-clara);
+}
+
+.tarefa-cx {
+  margin: 20px 5px 0 0;
+  padding: 0 15px;
+  color: var(--fonte-clara);
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.tarefa-cx.overflow {
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.tarefa-cx::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 25px;
+}
+
+.tarefa-cx::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+.tarefa-cx::-webkit-scrollbar-thumb {
+  background: var(--fonte-escura);
+}
+
+.tarefa-cx .tarefa {
+  font-size: 17px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.tarefa-cx .tarefa:last-child {
+  margin-bottom: 0;
+}
+
+.tarefa-cx .tarefa label {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tarefa label input {
+  margin-top: 7px;
+  accent-color: var(--fonte-escura);
+}
+
+.tarefa label p {
+  margin-left: 12px;
+  word-wrap: break-word;
+}
+
+.tarefa label p.checked {
+  text-decoration: line-through;
+}
+
+.tarefa-cx .config {
+  position: relative;
+}
+
+.config {
+  cursor: pointer;
+  color: var(--fonte-escura);
+}
+
+.config .tarefa-menu {
+  z-index: 999;
+  right: 0;
+  bottom: -65px;
+  padding: 5px 0;
+  background: var(--bg-escuro);
+  position: absolute;
+  border-radius: 4px;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.2s ease;
+}
+
+.tarefa-cx .tarefa:last-child .tarefa-menu {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.tarefa-cx .tarefa:first-child .tarefa-menu {
+  bottom: -65px;
+  transform-origin: top right;
+}
+
+.tarefa-menu.mostrar {
+  transform: scale(1);
+}
+
+.tarefa-menu li {
+  height: 25px;
+  margin-bottom: 5px;
+  padding: 17px 15px;
+  cursor: pointer;
+}
+
+.tarefa-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.config li:hover i {
+  color: var(--fonte-clara);
+}

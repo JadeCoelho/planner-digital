@@ -1,0 +1,98 @@
+#alarme {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  border-radius: 10px;
+  padding: 15px;
+  color: var(--fonte-clara);
+  box-shadow: var(--sombra);
+  background-color: var(--bg);
+}
+
+#alarme i {
+  font-size: 50px;
+  user-select: none;
+  color: var(--especial);
+  opacity: 0.8;
+}
+
+#alarme h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+}
+
+h3 {
+  margin: 20px 0 10px 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.set-alarm-field {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+}
+
+.set-alarm-field input {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: transparent;
+  color: var(--fonte-clara);
+}
+
+#alarme .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+#alarme .buttons button {
+  color: var(--fonte-clara);
+  background-color: var(--fonte-escura);
+  width: fit-content;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+#alarme .buttons button:hover {
+  background-color: var(--fonte-clara);
+  color: var(--fonte-escura);
+}
+
+#upcoming-alarms {
+  width: 100%;
+}
+
+#upcoming-alarms-list {
+  width: 100%;
+  padding: 0 15px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#upcoming-alarms-list li {
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.time-list button {
+  background-color: transparent;
+  color: var(--fonte-escura);
+  cursor: pointer;
+}
+.time-list button:hover {
+  color: var(--fonte-clara);
+}

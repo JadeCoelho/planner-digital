@@ -1,0 +1,207 @@
+@media (max-width: 800px) {
+  #planner .container {
+    width: 100%;
+    align-items: center;
+  }
+
+  #planner .tabela {
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  }
+  #metas .todo {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+  body .menu {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    z-index: 9999999;
+    background: var(--bg);
+  }
+  body .menu ul .home span {
+    margin-bottom: 0;
+  }
+  body .menu ul li {
+    margin-bottom: 0;
+  }
+  body ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .modo {
+    display: none;
+  }
+  .topo {
+    font-size: 12px;
+  }
+
+  .topo h2 {
+    padding-left: 0;
+  }
+  .msg p {
+    font-size: 15px;
+  }
+
+  #home img {
+    width: 250px;
+  }
+
+  .calendar-week-day div,
+  .calendar-days div,
+  .month-list {
+    font-size: 16px;
+  }
+
+  #upcoming-alarms-list {
+    flex-direction: column;
+  }
+  
+  #todo {
+    width: 345px;
+    padding: 20px 10px;
+  }
+  .tarefa-input {
+    height: 42px;
+  }
+  .tarefa-input input {
+    font-size: 15px;
+    padding: 0 15px 0 40px;
+  }
+  .tarefa-input i {
+    font-size: 18px;
+  }
+  .controles {
+    padding: 10px 5px;
+  }
+  .filtros span {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .filtros span:last-child{
+    margin-right: 10px;
+  }
+  .controles .btn-limpar {
+    padding: 2px 5px;
+    font-size: 12px;
+  }
+  .tarefa-cx {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 0 5px;
+    font-size: 15px;
+    flex-direction: column;
+  }
+  .tarefa-cx .tarefa {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  .config .tarefa-menu {
+    flex-direction: column;
+    padding: 5px 15px;
+  }
+  .tarefa-menu li {
+    height: 25px;
+    padding: 12px;
+    cursor: pointer;
+    justify-content: flex-start;
+  }
+  .config i {
+    font-size: 18px;
+  }
+
+  #metas .todo {
+    width: 80vw;
+  }
+  #metas .todo__title {
+    font-size: 2.5rem;
+  }
+
+  #metas .todo__item span {
+    font-size: 20px;
+  }
+  #metas .todo__new-item {
+    height: 40px;
+    padding: 0;
+  }
+  #metas input[type="text"],
+  #metas .todo__item div {
+    font-size: 2rem;
+  }
+
+  #planner{
+    overflow-y: auto;
+    width: 100%;
+    height: 82vh;
+    justify-content: center;
+  }
+  #planner .container {
+    width: 95%;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  #planner .tabela {
+    grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+    width: 90%;
+    position: relative;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .topo {
+    font-size: 10px;
+  }
+
+  .msg p {
+    font-size: 14px;
+  }
+  #planner{
+    height: 70vh;
+  }
+
+  .calendar{
+    padding: 5px;
+  }
+}
+@media (max-width: 300px) {
+  .topo {
+    font-size: 8px;
+  }
+
+  .msg p {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-height: 600px) {
+  #planner{
+    overflow-y: auto;
+    width: 100%;
+    height: 82vh;
+    justify-content: center;
+  }
+  #planner .container {
+    width: 95%;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  #planner .tabela {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    width: 90%;
+    position: relative;
+  }
+}

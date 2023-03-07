@@ -1,0 +1,94 @@
+#metas .todo {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: #3a3e5560;
+  padding: 10px;
+  font-size: 1.1rem;
+  box-shadow: var(--sombra);
+  border-radius: 5px;
+}
+
+#metas .todo__title {
+  text-align: center;
+  background-color: var(--especial);
+  padding: 5px;
+  width: 100%;
+  font-size: 1.2rem;
+  color: var(--fonte-clara);
+  text-transform: uppercase;
+}
+
+#metas .todo__list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--fonte-clara);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#metas .todo__item {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+#metas .todo__item > div {
+  width: 90%;
+  padding-left: 15px;
+}
+#metas .todo__item span {
+  color: var(--fonte-clara);
+}
+#metas .todo__item:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: var(--bg);
+}
+
+#metas .todo__item > input[type="text"] {
+  width: 80%;
+  font: inherit;
+}
+
+#metas .todo__item > input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  font: inherit;
+}
+
+#metas input[type="checkbox"] {
+  accent-color: var(--bg);
+}
+
+#metas .todo__item > input[type="checkbox"]:checked + div {
+  text-decoration: line-through;
+}
+
+#metas .todo__new-item {
+  display: flex;
+  background-color: var(--bg);
+  width: 100%;
+  height: 60px;
+  padding: 10px 5%;
+  font: inherit;
+}
+
+#metas .todo__new-item > input {
+  background-color: var(--bg);
+  width: 100%;
+  padding-left: 15px;
+  font: inherit;
+  color: var(--fonte-clara);
+}
+
+#metas .todo__new-item > input::placeholder {
+  font-weight: normal;
+  color: var(--fonte-escura);
+}

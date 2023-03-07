@@ -1,0 +1,63 @@
+#planner .container,
+#planner .col {
+  display: flex;
+  align-items: center;
+}
+
+#planner h3 {
+  text-transform: uppercase;
+  color: var(--fonte-clara);
+  background-color: var(--especial);
+  width: 100%;
+  text-align: center;
+}
+
+#planner .container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.tabela {
+  width: 80%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  column-gap: 10px;
+  row-gap: 15px;
+  padding: 10px 15px 20px 15px;
+  box-shadow: var(--sombra);
+  border-radius: 5px;
+  background-color: var(--bg);
+}
+
+.col {
+  flex-direction: column;
+  width: 100%;
+}
+
+#planner input {
+  width: 100%;
+  background-color: transparent;
+  padding-left: 5px;
+  color: var(--fonte-clara);
+  border-bottom: 1px solid var(--fonte-escura);
+}
+
+#planner button {
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  text-transform: uppercase;
+  background-color: var(--bg-escuro);
+  color: var(--fonte-clara);
+}
+#planner button:hover {
+  background-color: var(--fonte-escura);
+}
+
+

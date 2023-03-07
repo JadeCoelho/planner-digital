@@ -1,0 +1,130 @@
+.calendar {
+  height: fit-content;
+  width: max-content;
+  background-color: var(--bg);
+  border-radius: 10px 10px 15px 15px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  color: var(--fonte-clara);
+  padding: 10px;
+}
+
+.calendar-body {
+  padding: 5px;
+  cursor: default;
+}
+
+.calendar-week-day {
+  height: 30px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-week-day div {
+  display: grid;
+  place-items: center;
+  color: var(--fonte-escura);
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  color: var(--fonte-clara);
+}
+
+.calendar-days div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+}
+
+.calendar-days div span {
+  position: absolute;
+}
+
+.calendar-days div.curr-date {
+  background-color: var(--especial);
+  border-radius: 50%;
+}
+
+.month-picker {
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.month-picker:hover {
+  background-color: var(--fonte-escura);
+}
+
+.year-picker {
+  display: flex;
+  align-items: center;
+}
+
+.year-change {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.year-change:hover {
+  background-color: var(--fonte-escura);
+}
+
+.month-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--bg);
+  grid-template-columns: repeat(3, auto);
+  transform: scale(1.3);
+  display: none;
+  pointer-events: none;
+  color: var(--fonte-escura);
+}
+
+.month-list.show {
+  transform: scale(1);
+  display: grid;
+  pointer-events: visible;
+  transition: all 0.2s ease-in-out;
+}
+
+.month-list > div {
+  display: grid;
+  place-items: center;
+}
+
+.month-list > div > div {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--fonte-escura);
+}
+
+.month-list > div > div:hover {
+  color: var(--fonte-clara);
+}
