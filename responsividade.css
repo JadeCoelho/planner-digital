@@ -22,7 +22,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     z-index: 9999999;
     background: var(--bg);
